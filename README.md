@@ -4,6 +4,8 @@ This react app is meant to interact with 2 smart contracts. One for setting and 
 
 ## Contract compilation
 
+In order to run the project correctly you need to add the `.env` file as its shown inside `.env.example`
+
 To generate the ABI ( interface ) for your contracts you need to run this command 👇
 
 `npx hardhat compile`
@@ -13,18 +15,25 @@ This will generate a json with the contract functions inside `./artifacts/contra
 ## Deployment
 
 This will run Hardhat Network 👇
+
 `npx hardhat node`
 
 This will deploy the compiled contract to the local network 👇
+
 `node scripts/deploy.js --network localhost`
+
 You can change localhost to nay network you are using with the infura configuration inside `hardhat.config.js`
 
 ## Configuration
 
-hardhat.config.js -> The entirety of your Hardhat setup
-scripts -> scripts for deploying contracts
-test -> test for the contracts
-contracts -> solidity code
+```
+    hardhat.config.js -> The entirety of your Hardhat setup
+    scripts -> scripts for deploying contracts
+    test -> test for the contracts 🧪
+    contracts -> solidity code 📜
+    src/App -> react UI for the project 🚀
+    .env -> Configuration variables 🔐
+```
 
 ## Warnings ⚠
 
